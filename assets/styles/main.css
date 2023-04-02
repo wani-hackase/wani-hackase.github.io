@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* ---------------------------------------------------------------------*/
+/*  Basic styles                                                        */
+/* ---------------------------------------------------------------------*/
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  color: #ddd;
+  background-color: #1e1e1e;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+/* https://websemantics.uk/tools/responsive-font-calculator/ */
+
+p {
+  font-size: 14px;
+}
+
+@media (min-width: 480px) {
+  p {
+    font-size: calc(14px + ((1vw - 4.8px) * 0.1389));
+  }
+}
+
+@media (min-width: 1920px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Lato", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #eee;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@media (min-width: 480px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1920px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+}
+
+@media (min-width: 480px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1920px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+
+/* ---------------------------------------------------------------------*/
+/*  page-top                                                            */
+/* ---------------------------------------------------------------------*/
+
+.page-top-logo {
+  max-height: 200px;
+}
+
+/* ---------------------------------------------------------------------*/
+/*  page-about                                                          */
+/* ---------------------------------------------------------------------*/
+
+.page-about h2 {
+  margin-top: 3rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.page-about h3 {
+  margin-top: 1.5rem !important;
+  padding-bottom: .5rem !important;
+}
+
+/* ---------------------------------------------------------------------*/
+/*  table                                                              */
+/* ---------------------------------------------------------------------*/
+
+.page-ranking-text i {
+  padding: 5px;
+}
+
+.table-dark {
+  background-color: #1e1e1e;
+}
+
+.table i {
+  padding-right: 15px;
+}
+
+/* ---------------------------------------------------------------------*/
+/*  colors                                                              */
+/* ---------------------------------------------------------------------*/
+
+.color-complete {
+  color: #ffdf00;
+}
+
+.color-top-10 {
+  color: #dbe4eb;
+}
+
+.color-top-25 {
+  color: #b08d57;
+}
+
+.color-crypto {
+  color: #ff0100;
+}
+
+.color-forensics {
+  color: #ff8b00;
+}
+
+.color-misc {
+  color: #f8ff00;
+}
+
+.color-pwn {
+  color: #2cfa00;
+}
+
+.color-reversing {
+  color: #00e9ff;
+}
+
+.color-web {
+  color: #146dff;
+}
+
+/* ---------------------------------------------------------------------*/
+/*  custom button                                                       */
+/* ---------------------------------------------------------------------*/
+
+.btn-cert {
+	display: flex;
+  padding: 1px 8px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	color: #ddd;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.3s;
+
+  background-color: transparent;
+	border: 1px solid #ddd;
+	border-radius: 35px;
+}
+
+.btn-cert:hover {
+	background-color: #ddd;
+	border: 1px solid #1e1e1e;
+  color: #1e1e1e;
+}
