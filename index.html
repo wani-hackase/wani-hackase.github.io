@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
   <head>
     <meta charset="utf-8">
@@ -53,6 +53,13 @@
   </head>
 
   <body>
+    <div class="container mt-3">
+      <div class="row justify-content-end">
+        <div class="col-auto">
+          <a href="/" class="disabled">English</a> / <a href="/jp.html">Japanese</a>
+        </div>
+      </div>
+    </div>
     <main>
       <article class="page-top pt-5">
         <div class="text-center container">
@@ -70,15 +77,15 @@
       <article class="page-about px-3 pb-5">
         <div class="container">
           <h2>Welcome to WaniCTF 2023 !</h2>
-          <p>WaniCTF は大阪大学 CTF サークル <a href="https://www-int.ist.osaka-u.ac.jp/ctf/">Wani Hackase</a> が開催する初心者~中級者向けの CTF です。</p>
-          <p>CTF はサイバーセキュリティ技術の競技で、コンピュータサイエンス・プログラミングをベースに様々な脆弱性とその脆弱性に対する攻撃手法の知識・スキルを競います。</p>
-          <p>WaniCTF は Jeopardy-style と呼ばれるクイズ形式の CTF で、それぞれの問題に隠されているフラグという文字列を見つけ出しスコアサーバーに提出することで点数を獲得することができます。</p>
-          <p>CTF に参加するのが初めてであったり、数回しか参加したことがない方でも楽しめる難易度になっています。また教育的効果を追求するため、ある程度の誘導や必要なツールの情報が記載されています。これらの情報を参考にしつつトライしてみてください。</p>
-          <p>どなたでも無料で参加できます。スコアサーバーの Register ページよりアカウントを作成して参加してください。</p>
-          <h2>開催時間 (JST)</h2>
-          <p>2023/5/4(木) 15:00 ~ 2023/5/6(土) 15:00</p>
-          <h2>スコアサーバー</h2>
-          <p>開催1週間前に公開します。スコアサーバー公開後からアカウント作成ができます。</p>
+          <p>WaniCTF is a CTF event organized by <a href="https://www-int.ist.osaka-u.ac.jp/ctf/">Wani Hackase</a>, the Osaka University CTF club, aimed at beginners to intermediate level participants.</p>
+          <p>CTF is a cyber security competition that involves testing one's knowledge and skills in vulnerability identification and attack techniques, based on computer science and programming.</p>
+          <p>WaniCTF follows a Jeopardy-style quiz format, where the participants must find a string of characters called a "flag," hidden within each question, and submit it to the score server to earn points.</p>
+          <p>Even those who are new to CTF or have only participated a few times can enjoy the event, as the difficulty level is designed to be accommodating. Moreover, to enhance the educational value of the competition, certain instructions and necessary tools are provided. Please make use of these resources while attempting the challenges.</p>
+          <p>Participation is free and open to everyone. To register, please create an account through the Register page on the score server.</p>
+          <h2>Time (UTC)</h2>
+          <p>2023/5/4(Thu) 06:00 ~ 2023/5/6(Sat) 06:00</p>
+          <h2>Score server</h2>
+          <p>We will release it one week prior to the event. You will be able to create an account after the score server is made public.</p>
           <!--
           <s><p><a href="https://score.wanictf.org/">https://score.wanictf.org/</a></p></s>
           -->
@@ -87,9 +94,9 @@
           -->
           <h2>Discord</h2>
           <p><a href="https://discord.gg/9e3jBUAZ2Y">https://discord.gg/9e3jBUAZ2Y</a></p>
-          <h2>ルール</h2>
-          <p>個人参加形式です。1 人 1 アカウントとなります。</p>
-          <p>以下の 6 つのカテゴリで出題されます。</p>
+          <h2>Rules</h2>
+          <p>Please participate in teams, register one account per team.</p>
+          <p>The questions are presented in the following six categories:</p>
           <ul>
           <li>Crypto</li>
           <li>Forensics</li>
@@ -98,47 +105,45 @@
           <li>Reversing</li>
           <li>Web</li>
           </ul>
-          <p>それぞれの問題に隠されたフラグを見つけ出してスコアサーバーに提出することで点数を獲得できます。</p>
-          <p>フラグの形式は各問題で指定がない限り<code>FLAG{[0-9a-zA-Z_\-\.$@!?]+}</code>です。</p>
-          <p>問題で配布されるソースコードには偽フラグとして<code>FAKE{[0-9a-zA-Z_\-\.$@!?]+}</code>が含まれています。偽フラグを提出しても点数を獲得することはできません。</p>
-          <p>各問題で獲得できる点数は問題ごとの正答数によって変動します。(正答数が少ない問題ほど獲得できる得点が高くなります)</p>
-          <p>獲得点数の合計によって順位が決まります。同一得点の場合は先にその点数となった参加者を上位とします。</p>
-          <h3>禁止事項</h3>
-          <p>以下の行為は禁止されています。これらの行為を行った参加者に対してはサーバーへのアクセスを禁止し、失格にします。</p>
+          <p>You can earn points by finding the hidden flag in each problem and submitting it to the score server.</p>
+          <p>The flag format is <code>FLAG{[0-9a-zA-Z_\-\.$@!?]+}</code> unless otherwise specified in each problem.</p>
+          <p>The source code distributed in the problem includes <code>FAKE{[0-9a-zA-Z_\-\.$@!?]+}</code> as a false flag. Submitting a false flag will not earn any points.</p>
+          <p>The number of points that can be earned in each problem varies depending on the number of correct answers. (Problems with fewer correct answers are worth more points.)</p>
+          <p>The rank is determined by the total number of points earned. In case of a tie, the participant who achieved that score first will be ranked higher.</p>
+          <h3>Prohibited Actions</h3>
+          <p>The following actions are strictly prohibited. Participants who engage in these actions will be disqualified and denied access to the server.</p>
           <ul>
-          <li>競技中に他の参加者と問題の解法やヒントを共有する</li>
-          <li>他の参加者への妨害</li>
-          <li>スコアサーバーへの攻撃</li>
-          <li>スコアサーバーへフラグを多数提出して総当たりを行う</li>
-          <li>問題サーバーへ過剰な負荷を与える</li>
-          <li>複数アカウントでの参加</li>
+          <li>Sharing solutions or hints with other participants during the competition.</li>
+          <li>Interfering with other participants.</li>
+          <li>Attacking the score server.</li>
+          <li>Submitting numerous flags to the score server through brute-force methods.</li>
+          <li>Overloading the problem server with excessive traffic.</li>
+          <li>Participating with multiple accounts.</li>
           </ul>
-          <h2>注意事項</h2>
-          <p>この CTF で求められる手法を管理者の承諾を得ていない電子計算機に対して実行すると<a href="https://elaws.e-gov.go.jp/search/elawsSearch/elaws_search/lsg0500/detail?lawId=411AC0000000128">不正アクセス行為の禁止等に関する法律</a>に抵触することがあります。該当する手法を外部のサーバーに対して実行しないでください。</p>
-          <p>WaniCTF の Web ページおよびスコアサーバーではアクセス解析のために Google Analyticsを使用しています。</p>
-          <h2>問い合わせ</h2>
-          <p>スコアサーバーの Support ページ・Discord の <code>#support</code> チャンネルで運営に問い合わせができます。</p>
-          <p>ただし、問題の解法や参加者の技術的問題に関する質問には回答しません。</p>
-          <p>Discord での問い合わせは個別にプライベートチャンネルを作成して対応します。 <code>#support</code> チャンネルにて問い合わせが必要である旨を発言してください。</p>
-          <h2>補足事項</h2>
-          <p>参加者の交流と運営によるアナウンスのために Discord サーバーを開放します。(参加は必須ではありません)</p>
-          <p>スコアサーバーの Notification ページと Discord の <code>#notification</code> チャンネルにて運営によるアナウンスを行います。</p>
-          <p>Web カテゴリの問題は開始後にサーバーを起動するため、問題の公開時間が遅れます。</p>
-          <p>各問題の正答数による点数差が適切でないと運営が判断した場合、競技時間中に点数の算出パラメータを変更します。</p>
-          <p>競技終了後は問題のソースコードと想定解法を GitHub で公開します。スコアボード及び問題サーバーは一部廉価なインスタンスに移行した上で 1 週間公開します。</p>
-          <p>競技最終日にアンケートを行います。回答していただけるとありがたいです。</p>
-          <h2>新入部員の募集</h2>
-          <p>Wani Hackaseでは通年で新入部員を募集しています。詳細はWani Hackaseホームページ <a href="https://www-int.ist.osaka-u.ac.jp/ctf/">https://www-int.ist.osaka-u.ac.jp/ctf/</a> をご覧ください。</p>
-          <h2>過去の開催</h2>
+          <h2>Attention</h2>
+          <p>Google Analytics is used for access analysis on the WaniCTF website.</p>
+          <h2>Inquiry</h2>
+          <p>You can contact the administrator on the Support page of the score server and in the <code>#support</code> channel on Discord.</p>
+          <p>However, we do not answer questions regarding the solution to problems or technical issues of participants.</p>
+          <p>Inquiries on Discord will be handled by creating a private channel individually. Please make a statement in the <code>#support</code> channel that you need to make an inquiry.</p>
+          <h2>Additional Notes</h2>
+          <p>To facilitate communication among participants and announcements by the organizers, we will open a Discord server (participation is not mandatory).</p>
+          <p>The organizers will make announcements via the Notification page on the Score Server and the <code>#notification</code> channel on Discord.</p>
+          <p>If the score difference between the correct answers of each problem is not appropriate, the organizers will change the calculation parameters during the competition.</p>
+          <p>After the end of the competition, we will publish the source code and expected solutions for each problem on GitHub. We will keep the Scoreboard and Problem Server open for one week, using some inexpensive instances.</p>
+          <p>On the last day of the competition, we will conduct a survey. We would appreciate it if you could respond to it.</p>
+          <h2>Recruitment of New Club Members</h2>
+          <p>Wani Hackase is constantly seeking new members throughout the year, from students and faculty members affiliated with Osaka University. For more details, please refer to the Wani Hackase website at <a href="https://www-int.ist.osaka-u.ac.jp/ctf/">https://www-int.ist.osaka-u.ac.jp/ctf/</a> .</p>
+          <h2>Past Events</h2>
           <h5 class="mb-1">WaniCTF 2021</h5>
           <p class="small text-muted">2021/11/5 ~ 2021/11/7</p>
-          <p><a href="/2021/">ランキング表</a>&ensp;<a href="https://github.com/wani-hackase/wanictf2021-writeup">作問者writeup</a></p>
+          <p><a href="/2021/">Ranking</a>&ensp;<a href="https://github.com/wani-hackase/wanictf2021-writeup">Writeup</a></p>
           <h5 class="mt-3 mb-1">WaniCTF'21-spring</h5>
           <p class="small text-muted">2021/4/30 ~ 2021/5/2</p>
-          <p><a href="/2021s/">ランキング表</a>&ensp;<a href="https://github.com/wani-hackase/wanictf21spring-writeup">作問者writeup</a></p>
+          <p><a href="/2021s/">Ranking</a>&ensp;<a href="https://github.com/wani-hackase/wanictf21spring-writeup">Writeup</a></p>
           <h5 class="mt-3 mb-1">WaniCTF 2020</h5>
           <p class="small text-muted">2020/11/21 ~ 2020/11/23</p>
-          <p><a href="/2020/">ランキング表</a>&ensp;<a href="https://github.com/wani-hackase/wanictf2020-writeup">作問者writeup</a></p>
+          <p><a href="/2020/">Ranking</a>&ensp;<a href="https://github.com/wani-hackase/wanictf2020-writeup">Writeup</a></p>
         </div>
       </article>
     </main>
